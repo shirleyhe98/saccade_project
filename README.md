@@ -1,4 +1,4 @@
-Saccade Detection Project
+# Saccade Detection Project
 
 This project is created for ECE-GY 9953 project course with Prof. Ivan Selesnick.
 
