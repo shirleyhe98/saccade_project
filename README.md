@@ -12,4 +12,5 @@ The algorithm functions are divided into pieces, i.e. each function is placed in
 The source code is based on [1] and [2].
 
 [1] W. Dai, I. Selesnick, J.-R. Rizzo, J. Rucker and T. Hudson, "Detection of normal and slow saccades using implicit piecewise polynomial approximation," Journal of Vision, vol. 21, no. 6, pp. 1-18, 2021. 
+
 [2] J. Wu and M. Baig, "DP2 Project: Application of CGTV Algorithm on Processing Saccade Data," 2022.
