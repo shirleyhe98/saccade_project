@@ -6,16 +6,12 @@ def threshold_in_window_partial_data(vel_denoise, vel_th):
     This function calculate the number of saccades in a selected set of velocity
     data within the window.
 
-    @oaram vel_denoise: the denoised and smoothed velocity signal
-    @param time_data: the part of array of time corresponding to velocity signal obtained 
-    from the given data
-    @param label_data: the part of array of labels corresponding to velocity signal created
-    for all signal data
-    @param vel_th: the velocity threshold that used to determine saccades and fixations
+    @param vel_denoise: the denoised and smoothed velocity signal.
+    @param vel_th: the velocity threshold that used to determine saccades and fixations.
 
     @return detection_array: the array of 0s and 1s indicating fixations 
-    and saccades respectively within the window
-    @return saccade_num: the number of detected saccades within the window
+    and saccades respectively within the window.
+    @return saccade_num: the number of detected saccades within the window.
     """
 
     # create empty detection array and saccade number within the window

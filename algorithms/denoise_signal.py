@@ -19,7 +19,8 @@ def denoise_signal(position, alpha, beta, Nit, denoised_signal=None):
     @param alpha: regularization parameter used for denoising.
     @param beta: regularization parameter used for denoising
     @param Nit: number of iterations.
-    @denoised_signal: a previously denoised signal
+
+    @return x: position signal been denoised.
     """
 
     # Get the length of saccade position signal and create an array of ones

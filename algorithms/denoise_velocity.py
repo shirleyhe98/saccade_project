@@ -6,11 +6,11 @@ def denoise_vel(position, Fs, movavg=0.02):
     Call calc_derivative_signal function to calculate the derivative of position
     signal to obtain the velocities and smooth it out.
 
-    @param position: the input saccade position signal
-    @param Fs: the sampling rate (samples/second) of the input signal
-    @param movavg: moving average in units of seconds, which is set to 0.02
+    @param position: the input saccade position signal.
+    @param Fs: the sampling rate (samples/second) of the input signal.
+    @param movavg: moving average in units of seconds, which is set to 0.02.
 
-    @return vel_denoise: the denoised velocity signal
+    @return vel_denoise: the denoised velocity signal.
     """
 
     # get velocity signal by taking the derivative of position signal

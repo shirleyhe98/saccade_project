@@ -8,10 +8,10 @@ def sliding_window_algorithm(saccade_time_data, vel_denoise, vel_th, win_len):
     saccades of data within the window, sliding it throught the whole dataset, and
     calculating the total number of detected saccades.
 
-    @param saccade_time_data: the time data of the given dataset
-    @param vel_denoise: the denoised velocity signal
-    @param vel_th: the velocity threhsold set by the user
-    @param win_len: the length of the sliding window set by the user
+    @param saccade_time_data: the time data of the given dataset.
+    @param vel_denoise: the denoised velocity signal.
+    @param vel_th: the velocity threhsold set by the user.
+    @param win_len: the length of the sliding window set by the user.
 
     @return complete_detection_array: the array containing 0s and 1s. indicating 
     whether the saccade is detected or not.
@@ -56,7 +56,7 @@ def sliding_window_algorithm(saccade_time_data, vel_denoise, vel_th, win_len):
             complete_detection_array[l] = 1
         
         # calculate total saccade number
-        total_sacc += saccade_num
+        total_sacc = total_sacc + saccade_num
         start_time = end_time
 
         # if window's end time exceeds the last time data, then the loop stops

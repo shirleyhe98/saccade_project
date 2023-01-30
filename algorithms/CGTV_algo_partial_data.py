@@ -26,16 +26,19 @@ def CGTV_algo_partial_data(Fs, original_signal, saccade_time, denoised_vel, wind
     "Detection of normal and slow saccades using implicit piecewise polynomial 
     approximation," Journal of Vision, vol. 21, no. 6, pp. 1-18, 2021. 
     
-    @param Fs: sampling rate of the singal
-    @param original_signal: original saccade position signal
-    @param saccade_time: time data of the given signal
-    @param denoised_vel: previously denoised velocity signal
-    @param num_iter: number of iteration times
+    @param Fs: sampling rate of the singal.
+    @param original_signal: original saccade position signal.
+    @param saccade_time: time data of the given signal.
+    @param denoised_vel: previously denoised velocity signal.
+    @param num_iter: number of iteration times.
 
-    @return denoised_signal: the position signal been denoised
+    @return start_index: the start index of sliding window set by the user.
+    @return win_time: the time data within the window.
+    @return win_signal: the position data within the window.
+    @return partial_denoised_signal: the partial position signal been denoised.
     @return detection_array: array containing 0s and 1s indicating whether a saccade is
-    detected or not
-    @return total_sacs: number of total saccades being detected
+    detected or not.
+    @return num_sacs: number of saccades being detected within the window.
     """
 
     # Ask the user to enter preferred velocity threshold, window length and start time index

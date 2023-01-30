@@ -8,15 +8,15 @@ def sliding_window_algorithm_partial_data(saccade_time_data, vel_denoise, vel_th
     saccades of data within the window. Given the time start index from user, it only shows
     the processed data from the start time index to the sum of it and window length.
 
-    @param saccade_time_data: the time data of the given dataset
-    @param vel_denoise: the denoised velocity signal
-    @param vel_th: the velocity threhsold set by the user
-    @param win_len: the length of the sliding window set by the user
-    @param start_index: the start time of the sliding window set by the user
+    @param saccade_time_data: the time data of the given dataset.
+    @param vel_denoise: the denoised velocity signal.
+    @param vel_th: the velocity threhsold set by the user.
+    @param win_len: the length of the sliding window set by the user.
+    @param start_index: the start time of the sliding window set by the user.
 
-    @return complete_detection_array: the array containing 0s and 1s. indicating 
+    @return saccade_detection_array: the array containing 0s and 1s. indicating 
     whether the saccade is detected or not.
-    @return total_sacc: the total number of saccades detected of the whole dataset.
+    @return saccade_num: the number of saccades detected of data within the window.
     """
 
     # Create a label array for indexing

@@ -25,16 +25,16 @@ def CGTV_algo(Fs, original_signal, saccade_time, denoised_vel, num_iter=20):
     "Detection of normal and slow saccades using implicit piecewise polynomial 
     approximation," Journal of Vision, vol. 21, no. 6, pp. 1-18, 2021. 
     
-    @param Fs: sampling rate of the singal
-    @param original_signal: original saccade position signal
-    @param saccade_time: time data of the given signal
-    @param denoised_vel: previously denoised velocity signal
-    @param num_iter: number of iteration times
+    @param Fs: sampling rate of the singal.
+    @param original_signal: original saccade position signal.
+    @param saccade_time: time data of the given signal.
+    @param denoised_vel: previously denoised velocity signal.
+    @param num_iter: number of iteration times.
 
-    @return denoised_signal: the position signal been denoised
+    @return denoised_signal: the position signal been denoised.
     @return detection_array: array containing 0s and 1s indicating whether a saccade is
-    detected or not
-    @return total_sacs: number of total saccades being detected
+    detected or not.
+    @return total_sacs: number of total saccades being detected.
     """
 
     # Ask the user to enter preferred velocity threshold, window length and start time index
@@ -55,7 +55,7 @@ def CGTV_algo(Fs, original_signal, saccade_time, denoised_vel, num_iter=20):
     # Run sliding window VT algorithm to get detection array.
     detection_array, total_sacs = sliding_window_algorithm(saccade_time, denoised_vel, vel_th, window_len)
 
-    # Get standard deviation for all fixations, this will be the signma
+    # Get standard deviation for all fixations, this will be the sigma
     # Subtract average for each fixation
     fix_len = 0  # len of each fixation
     fixations = np.copy(original_signal)
